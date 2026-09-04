@@ -1,13 +1,16 @@
-export default function Form() {
+import Form from "next/form";
+
+export default function NameForm() {
   return (
-    <div className="flex flex-col gap-4">
+    <Form action="">
+      <div className="flex flex-col gap-4">
         <div className="flex flex-col text-base font-medium sm:flex-row">
           <input
             type="text"
             name=""
             placeholder="Your name"
             className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px] text-center outline-0"
-             />
+          />
         </div>
         <div className="flex flex-col text-base font-medium sm:flex-row">
           <a
@@ -18,6 +21,7 @@ export default function Form() {
             Generate now
           </a>
         </div>
-</div>
+      </div>
+    </Form>
   );
 }

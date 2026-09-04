@@ -3,6 +3,7 @@
 This Next.js app transforms any first name into a fantasy inspired title using a prefix/suffix model.
 
 ## Overview
+
 Rule the game night by creating an legendary hero name for your character based on your real name.
 
 This application is simple; Enter your first name in the field and hit "Transform" to create a fantasy style title for your character.
@@ -33,7 +34,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. The page auto-updates as you edit.
-
 
 ## Project structure
 

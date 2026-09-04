@@ -1,4 +1,4 @@
-import Form from "@/components/form";
+import NameForm from "@/components/name-form";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
             Please enter your first name
           </p>
         </div>
-        <Form />
+        <NameForm />
       </main>
     </div>
   );
