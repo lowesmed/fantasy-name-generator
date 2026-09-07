@@ -3,7 +3,7 @@
 import { generateFantasyName } from "@/lib/generate-fantasy-name";
 
 /**
- * Handle data from submitted form, get a single first name only & generates a fantasy version of it.
+ * Handle data from submitted form, gets a single first name only & generates a fantasy version of it.
  *
  * @param previousState - Default empty string
  * @param formData - Data from form submit

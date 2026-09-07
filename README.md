@@ -1,14 +1,21 @@
 # The Fantasy Name Generator 🧌
 
-This Next.js app transforms any first name into a fantasy inspired title using a prefix/suffix model.
+This Next.js app transforms any first name into a fantasy inspired title using a prefix/suffix function.
 
 ## Overview
 
 Rule the game night by creating an legendary hero name for your character based on your real name.
 
-This application is simple; Enter your first name in the field and hit "Transform" to create a fantasy style title for your character.
+This application is simple; Enter your first name in the field and hit "Generate" to create a fantasy style title for your character.
 
-Not happy with the result? Transform again.
+Not happy with the result? Generate again.
+
+## 🌟 Features
+
+- Easy name generation
+- Different name (most of the time)
+- Disabled button on < 3 letters
+- Handles hyphenated or seperated names
 
 ## Getting Started
 
@@ -41,7 +48,12 @@ Breakdown of some important files and folders in the project.
 
 ```
 fantasy-name-generator
+├─ actions                            
+│  └─ actions.ts                      # Server actions
 ├─ app                                # Pages & layouts
+├─ components                         # Reusable components
+├─ lib
+│  └─ generate-fantasy-name.ts        # Function for creating a fantasy name
 ```
 
 ## Resources
