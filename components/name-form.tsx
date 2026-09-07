@@ -25,6 +25,7 @@ export default function NameForm() {
           className="flex h-12 w-full items-center justify-center rounded-full border border-solid px-5 transition-colors hover:bg-black/4 border-white/[.145] md:w-39.5 text-center outline-0"
         />
         <button
+          suppressHydrationWarning
           className={`flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 transition-colors  md:w-39.5 ${!isValid ? "bg-amber-900 text-black hover:bg-amber-900 cursor-not-allowed" : "bg-purple-800 text-foreground hover:bg-purple-900 cursor-pointer"}`}
           disabled={!isValid || isLoading}
           type="submit"
