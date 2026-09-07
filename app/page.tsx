@@ -9,7 +9,8 @@ export default function Home() {
             Fantasy Name Ganerator
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Please enter your first name
+            Create a legendary title for your fantasy character inspired by your
+            own first name.
           </p>
         </div>
         <NameForm />
