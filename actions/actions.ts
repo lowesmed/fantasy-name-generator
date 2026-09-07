@@ -3,7 +3,7 @@
 import { generateFantasyName } from "@/lib/generate-fantasy-name";
 
 /**
- * Handle data from submitted form, get the name & make it into a fantasy version.
+ * Handle data from submitted form, get a single first name only & generates a fantasy version of it.
  *
  * @param previousState - Default empty string
  * @param formData - Data from form submit
@@ -15,11 +15,13 @@ export async function submitNameForm(
 ) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  let firstName = formData.get("name");
+  let name = formData.get("name");
 
-  if (firstName === null || typeof firstName !== "string") {
-    firstName = "";
+  if (name === null || typeof name !== "string") {
+    name = "";
   }
+
+  const firstName = name.split(/[\s-]+/)[0].trim();
 
   const fantasyName = generateFantasyName(firstName);
 

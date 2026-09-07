@@ -18,7 +18,7 @@ export default function NameForm() {
           type="text"
           name="name"
           id="name"
-          placeholder="Your name"
+          placeholder="First name"
           autoComplete="off"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
