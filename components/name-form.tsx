@@ -1,11 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import { submitNameForm } from "@/actions/actions";
 import Form from "next/form";
 import { useActionState } from "react";
 
 export default function NameForm() {
   const [state, action, isLoading] = useActionState(submitNameForm, "");
+  const [inputValue, setInputValue] = useState(""); 
+
+  const isValid = inputValue.trim().length >= 3;
 
   return (
     <Form action={action}>
@@ -15,10 +19,14 @@ export default function NameForm() {
           name="name"
           id="name"
           placeholder="Your name"
+          autoComplete="off"
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
           className="flex h-12 w-full items-center justify-center rounded-full border border-solid px-5 transition-colors hover:bg-black/4 border-white/[.145] md:w-39.5 text-center outline-0"
         />
         <button
-          className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-purple-800 px-5 text-foreground transition-colors hover:bg-purple-900 md:w-39.5"
+          className={`flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 transition-colors  md:w-39.5 ${!isValid ? "bg-amber-900 text-black hover:bg-amber-900 cursor-not-allowed" : "bg-purple-800 text-foreground hover:bg-purple-900 cursor-pointer"}`}
+          disabled={!isValid || isLoading}
           type="submit"
         >
           {isLoading ? "Making magic..." : "Generate"}
