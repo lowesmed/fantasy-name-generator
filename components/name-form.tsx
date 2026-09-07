@@ -7,7 +7,7 @@ import { useActionState } from "react";
 
 export default function NameForm() {
   const [state, action, isLoading] = useActionState(submitNameForm, "");
-  const [inputValue, setInputValue] = useState(""); 
+  const [inputValue, setInputValue] = useState("");
 
   const isValid = inputValue.trim().length >= 3;
 

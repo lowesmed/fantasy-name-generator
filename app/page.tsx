@@ -1,12 +1,12 @@
 import NameForm from "@/components/name-form";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center font-sans bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-center py-32 px-16 bg-black gap-6">
         <div className="flex flex-col items-center gap-6 text-center sm:text-center">
-          <Image 
+          <Image
             src="/fantasy-name-generator-logo.jpg"
             width={360}
             height={360}

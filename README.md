@@ -48,7 +48,7 @@ Breakdown of some important files and folders in the project.
 
 ```
 fantasy-name-generator
-├─ actions                            
+├─ actions
 │  └─ actions.ts                      # Server actions
 ├─ app                                # Pages & layouts
 ├─ components                         # Reusable components
