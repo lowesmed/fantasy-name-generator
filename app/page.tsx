@@ -11,6 +11,7 @@ export default function Home() {
             width={360}
             height={360}
             alt="Fantasy Name Generator"
+            loading="eager"
           />
           <p className="max-w-md text-lg leading-8 text-zinc-400">
             Create a legendary title for your fantasy character inspired by your
