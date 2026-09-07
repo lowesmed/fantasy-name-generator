@@ -36,7 +36,7 @@ export default function NameForm() {
           <div className="flex flex-col gap-2 text-base text-center border-2 p-8 mt-6 border-purple-800 rounded-2xl">
             <p className="font-medium">Hello</p>
             <p className="text-2xl font-bold text-purple-600">{state}</p>
-            <p>Now of to battle!</p>
+            <p>Now off to battle!</p>
           </div>
         )}
       </div>
