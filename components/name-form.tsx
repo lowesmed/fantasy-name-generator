@@ -24,7 +24,13 @@ export default function NameForm() {
           >
             {isLoading ? "Making magic..." : "Generate now"}
           </button>
-          {state && <div className="flex flex-col text-base font-medium text-center">{state}</div>}
+          {state && 
+            <div className="flex flex-col gap-2 text-base text-center bg-amber-700 p-6 rounded-2xl">
+              <p className="font-medium">Your mighty name:</p>
+              <p className="text-lg font-bold">{state}</p>
+              <p>Now.. to battle!</p>
+            </div>
+          }
         </div>
     </Form>
   );
